@@ -5,7 +5,7 @@
 
 ## Getting started
 
-`$ npm install react-native-datatable --save`
+`$ npm install react-native-datatable-report --save`
 
 ### Mostly automatic installation
 

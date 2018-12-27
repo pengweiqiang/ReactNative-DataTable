@@ -9,7 +9,7 @@
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-datatable`
+`$ react-native link react-native-datatable-report`
 
 ### Manual installation
 
@@ -17,7 +17,7 @@
 #### iOS
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-datatable` and add `RNDatatable.xcodeproj`
+2. Go to `node_modules` ➜ `react-native-datatable-report` and add `RNDatatable.xcodeproj`
 3. In XCode, in the project navigator, select your project. Add `libRNDatatable.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
@@ -28,18 +28,18 @@
   - Add `new RNDatatablePackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-datatable'
-  	project(':react-native-datatable').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-datatable/android')
+  	include ':react-native-datatable-report'
+  	project(':react-native-datatable-report').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-datatable-report/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-datatable')
+      compile project(':react-native-datatable-report')
   	```
 
 
 ## Usage
 ```javascript
-import RNDatatable from 'react-native-datatable';
+import RNDatatable from 'react-native-datatable-report';
     let tableDatas =[{
                 dachenglv: "103.082779",
                 fenqudao: "合计",

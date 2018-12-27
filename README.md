@@ -1,6 +1,6 @@
 
 # react-native-datatable
-![avatar](screen/Screen.gif)
+![avatar](https://github.com/pengweiqiang/ReactNative-DataTable/blob/master/screen/Screen.gif)
 
 
 ## Getting started

@@ -1,6 +1,6 @@
 
 # react-native-datatable
-![avatar](screen/Screen2.gif)
+![avatar](screen/Screen.gif)
 
 
 ## Getting started

@@ -1,0 +1,22 @@
+{
+  "name": "react-native-datatable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "",
+  "license": "",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  },
+  "dependencies": {
+    "link": "^0.1.5",
+    "react-native-progress": "^3.5.0",
+    "react-native-vector-icons": "^6.1.0"
+  }
+}

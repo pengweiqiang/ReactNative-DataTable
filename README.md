@@ -39,7 +39,7 @@
 
 ## Usage
 ```javascript
-import RNDatatable from 'react-native-datatable-report';
+import DataTable from 'react-native-datatable-report';
     let tableDatas =[{
                 dachenglv: "103.082779",
                 fenqudao: "合计",
@@ -81,7 +81,7 @@ import RNDatatable from 'react-native-datatable-report';
                     liandailv: "0.5",
                     yusuanwan: "5"
                 }];
-    <RNDatatable
+    <DataTable
             leftKey='fenqudao' //表格最左侧的行头字段属性key [String]  [必传]
             head={[{name:"渠道"}, {name:"金额(万)",sort:"desc"}, {name:"预算(万)",sort:"desc"}, {name:"达成率"}, {name:"对比金额"}, {name:"金额±%"}]} //顶部表头数据  Array 格式举个🌰 [{name:'金额(万)',sort:'desc'},{name:'预算(万)'}]  name为表头显示名称；sort为排序方式,不传不排序  [数组] [必传]
             list={tableDatas} //表格数据 [Array]  [必传]

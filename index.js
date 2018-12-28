@@ -1,6 +1,4 @@
+import DataTable from './src/DataTable';
 
-import { NativeModules } from 'react-native';
 
-const { RNDatatable } = NativeModules;
-
-export default RNDatatable;
+export default DataTable;

@@ -9,7 +9,7 @@
  * 2.当排序列太多时，组件渲染render()执行有点慢。需要进行diff优化
  *  <DataTable
          leftKey='fenqudao' //表格最左侧的行头字段 String  [必传]
-         head='[{name:'金额(万)',sort:'desc'},{name:'预算(万)'}]' //顶部表头数据  Array 格式举个🌰 [{name:'金额(万)',sort:'desc'},{name:'预算(万)'}]  name为表头显示名称；sort为排序方式,不传不排序   [必传]
+         head={[{name:'金额(万)',sort:'desc'},{name:'预算(万)'}]} //顶部表头数据  Array 举个🌰 [{name:'金额(万)',sort:'desc'},{name:'预算(万)'}]  name为表头显示名称；sort为排序方式,不传不排序   [必传]
          list={this.state.tableDatas} //表格数据 Array  [必传]
          dataKeys={['jinewan','yusuanwan','dachenglv','shuliang','liandailv']} //表格中需要展示的列属性key，依次按照先后顺序展示  [必传，不传默认显示全部]
          showProgressBarKeys={['jinewan','yusuanwan']}  //是否展示颜色比例，传入要显示的列名，这个字段有点冗余，应该放在head里面，后期设计放在一个字段中  [可选]
@@ -48,9 +48,9 @@ export default class DataTable extends PureComponent {
         //排除指定行，不计入某列的总数中（默认全部统计）
         unstatisticsRows:PropTypes.array,
         //点击单元格的事件
-        onClickItemCell:PropTypes.fun,
+        onClickItemCell:PropTypes.func,
         //点击表头单元格的事件
-        onClickHeadItemCell:PropTypes.fun,
+        onClickHeadItemCell:PropTypes.func,
     };
     constructor(props){
         super(props);

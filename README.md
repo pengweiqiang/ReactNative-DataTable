@@ -83,7 +83,7 @@ import RNDatatable from 'react-native-datatable-report';
                 }];
     <RNDatatable
             leftKey='fenqudao' //表格最左侧的行头字段属性key [String]  [必传]
-            head='[{name:"渠道"}, {name:"金额(万)",sort:"desc"}, {name:"预算(万)",sort:"desc"}, {name:"达成率"}, {name:"对比金额"}, {name:"金额±%"}]' //顶部表头数据  Array 格式举个🌰 [{name:'金额(万)',sort:'desc'},{name:'预算(万)'}]  name为表头显示名称；sort为排序方式,不传不排序  [数组] [必传]
+            head={[{name:"渠道"}, {name:"金额(万)",sort:"desc"}, {name:"预算(万)",sort:"desc"}, {name:"达成率"}, {name:"对比金额"}, {name:"金额±%"}]} //顶部表头数据  Array 格式举个🌰 [{name:'金额(万)',sort:'desc'},{name:'预算(万)'}]  name为表头显示名称；sort为排序方式,不传不排序  [数组] [必传]
             list={tableDatas} //表格数据 [Array]  [必传]
             dataKeys={['jinewan','yusuanwan','dachenglv','shuliang','liandailv']} //表格中需要展示的列属性key，依次按照先后顺序展示  [必传，不传默认显示全部]
             showProgressBarKeys={['jinewan','yusuanwan']}  //是否展示颜色比例，传入要显示的列名，这个字段有点冗余，应该放在head里面，后期设计放在一个字段中  [可选]
@@ -99,5 +99,4 @@ import RNDatatable from 'react-native-datatable-report';
        />
 
 ```
-点个Star，3Q
   

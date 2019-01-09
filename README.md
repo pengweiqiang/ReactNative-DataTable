@@ -96,6 +96,7 @@ import DataTable from 'react-native-datatable-report';
                 //事件处理
                 console.log(item,row,column);
             }}
+            progressColor={'#a4b511'} //百分比的颜色值
        />
 
 ```

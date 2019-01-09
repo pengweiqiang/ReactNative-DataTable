@@ -16,6 +16,7 @@
          unstatisticsRows={['合计']} //不需要统计某一行数据，传入行头  [可选]
          onClickItemCell 点击右侧单元格的事件，事件回调返回行row，列column，以及点击内容 [可选]
          onClickHeadItemCell 点击表头头部单元格的事件，事件回调返回行row，列column，以及点击内容 [可选]
+         progressColor  百分比的颜色值
  />
  */
 import React, { PureComponent } from 'react';
@@ -51,7 +52,12 @@ export default class DataTable extends PureComponent {
         onClickItemCell:PropTypes.func,
         //点击表头单元格的事件
         onClickHeadItemCell:PropTypes.func,
+        //百分比颜色
+        progressColor:PropTypes.string,
     };
+    static defaultProps = {
+        progressColor:"#a4b5ed"
+    }
     constructor(props){
         super(props);
     }
@@ -142,7 +148,7 @@ export default class DataTable extends PureComponent {
                                       }}>
                         <View  style={[styles.cellRightView, rowData.index%2 && styles.tableCellBackground]}>
                             {(showProgressBarKeys!=undefined && showProgressBarKeys.indexOf(key)>-1) &&
-                            <Progress.Bar progress={rowData.item[key]/totalColumsProgress.get(key)} width={99} borderWidth={0} height={38} borderRadius={0} style={{position:'absolute'}} color={"#6495ED"}/>
+                            <Progress.Bar progress={rowData.item[key]/totalColumsProgress.get(key)} width={99} borderWidth={0} height={38} borderRadius={0} style={{position:'absolute'}} color={this.props.progressColor}/>
                             }
 
                             <Text>{rowData.item[key]}</Text>

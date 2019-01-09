@@ -1,6 +1,6 @@
 {
   "name": "react-native-datatable-report",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "A ReactNative DataTable Component for android and iOS",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "datatable"
   ],
   "author": "peng",
-  "license": "",
+  "license": "...",
   "peerDependencies": {
     "react-native": "^0.41.2"
   },
